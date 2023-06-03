@@ -1,0 +1,84 @@
+00000000         add $zero, $zero, $zero
+00000000         add $zero, $zero, $zero
+00000000         add $zero, $zero, $zero
+00000000         add $zero, $zero, $zero
+00000000         add $zero, $zero, $zero
+00000000         add $zero, $zero, $zero
+00000000         add $zero, $zero, $zero
+00000000         add $zero, $zero, $zero
+9D000048         lea $sp, 72
+3DD00000         lw $sp, 0($sp)
+960FFFF5         lea $t0, 1048565
+97000032         lea $t1, 50
+47600000         sw $t1, 0($t0)
+97000042         lea $t1, 66
+47600001         sw $t1, 1($t0)
+A0000000         ei 
+93000009         lea $a0, 9
+33300000         lw $a0, 0($a0)
+94000008         lea $a1, 8
+34400000         lw $a1, 0($a1)
+91000008         lea $at, 8
+6F100000         jalr $ra, $at
+93000005         lea $a0, 5
+42300000         sw $v0, 0($a0)
+70000000         halt 
+220FFFFF         addi $v0, $zero
+00000002         add $zero, $zero, $v0
+00000008         add $zero, $zero, $t2
+00000000         add $zero, $zero, $zero
+2DDFFFFF         addi $sp, $sp
+4ED00000         sw $fp, 0($sp)
+2ED00000         addi $fp, $sp
+84000000         none $a1, $zero
+5000000F         br 15
+83000000         none $a0, $zero
+5000000F         br 15
+244FFFFF         addi $a1, $a1
+910FFFF7         lea $at, 1048567
+2DDFFFFE         addi $sp, $sp
+4FEFFFFF         sw $ra, 1048575($fp)
+43EFFFFE         sw $a0, 1048574($fp)
+6F100000         jalr $ra, $at
+04200000         add $a1, $v0, $zero
+33EFFFFE         lw $a0, 1048574($fp)
+9100000A         lea $at, 10
+6F100000         jalr $ra, $at
+3FEFFFFF         lw $ra, 1048575($fp)
+2DD00002         addi $sp, $sp
+50000003         br 3
+22000001         addi $v0, $zero
+80200002         none $zero, $v0
+02000000         add $v0, $zero, $zero
+3EE00000         lw $fp, 0($fp)
+2DD00001         addi $sp, $sp
+60F00000         jalr $zero, $ra
+02000000         add $v0, $zero, $zero
+26000000         addi $t0, $zero
+02200003         add $v0, $v0, $a0
+26600001         addi $t0, $t0
+84600004         skple $a1, $t0
+500FFFFC         br 1048572
+60F00000         jalr $zero, $ra
+2DDFFFFF         addi $sp, $sp
+4CD00000         sw $k0, 0($sp)
+A0000000         ei 
+2DDFFFFE         addi $sp, $sp
+46D00000         sw $t0, 0($sp)
+47D00001         sw $t1, 1($sp)
+9600000D         lea $t0, 13
+36600000         lw $t0, 0($t0)
+37600000         lw $t1, 0($t0)
+27700001         addi $t1, $t1
+47600000         sw $t1, 0($t0)
+36D00001         lw $t0, 1($sp)
+37D00000         lw $t1, 0($sp)
+2DD00002         addi $sp, $sp
+B0000000         di 
+3CD00000         lw $k0, 0($sp)
+2DD00001         addi $sp, $sp
+C0000000         reti 
+00000000         add $zero, $zero, $zero
+0000A000         add $zero, $zero, $zero
+0000FFFF         add $zero, $zero, $ra
+0000FFE0         add $zero, $zero, $zero
