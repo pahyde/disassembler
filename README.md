@@ -10,10 +10,12 @@ I'm using it for ad hoc debugging purposes. It takes a filepath to an LC-902 hex
 
 ```bash
 javac disassemble/Disassembler.java
+```
 
 
 **To run:**
 
 ```bash
 java disassemble.Disassembler path_to_hex_file
+```
 
